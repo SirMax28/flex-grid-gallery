@@ -6,16 +6,16 @@
 }
 
 header{
-    background-color: aqua;
+    /*background-color: aqua;*/
     grid-area: header;
 }
 
 #sidebar{
-    background-color: lightblue;
+    /*background-color: lightblue;*/
     grid-area: sidebar;
 }
 #photo-container{
-   background-color: lightgreen;
+   /*background-color: lightgreen;*/
    grid-area: photos;
 }
 
