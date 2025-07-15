@@ -4,5 +4,6 @@
 body{
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Source Code Pro',Embed, Arial, sans-serif;
+    padding-bottom: 190px; /* Espacio para la ultima foto y el footer */
 }
