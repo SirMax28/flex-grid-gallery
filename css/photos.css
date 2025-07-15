@@ -1,48 +1,47 @@
 #photo-container {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 4px;
-
-}
-
-#photo-container .column {
-    flex: 25%;
-    max-width: 25%;
+    /* Propiedades para el layout de columnas múltiples */
+    column-count: 4;
+    column-gap: 8px;
     padding: 0 4px;
 }
 
-#photo-container .column .photos {
-    margin-top: 8px;
-    vertical-align: middle;
+#photo-container .photo {
+    /* Evita que una foto se parta entre dos columnas */
+    display: inline-block;
+    width: 100%;
+    break-inside: avoid;
+    margin-bottom: 8px; /* Añadido para el espacio vertical */
+    box-sizing: border-box;
 }
-#photo-container .column .photo img {
+
+#photo-container .photo img {
     width: 100%;
     height: auto;  
     border-radius: 8px;
+    vertical-align: middle;
 }
 
+/* Media queries para hacer el número de columnas responsivo */
 @media (max-width: 624px) {
-    #photo-container .column {
-        flex: 100%;
-        max-width: 100%;
+    #photo-container {
+        column-count: 1;
     }
 }
 
-@media (min-width: 624px) {
-    #photo-container .column {
-        flex: 50%;
-        max-width: 100%;
+@media (min-width: 624px) and (max-width: 759px) {
+    #photo-container {
+        column-count: 2;
     }
 }
-@media (min-width: 760px) {
-    #photo-container .column {
-        flex: 33.33%;
-        max-width: 100%;
+
+@media (min-width: 760px) and (max-width: 1023px) {
+    #photo-container {
+        column-count: 3;
     }
 }
+
 @media (min-width: 1024px) {
-    #photo-container .column {
-        flex: 25%;
-        max-width: 100%;
+    #photo-container {
+        column-count: 4;
     }
 }
