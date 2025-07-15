@@ -1,0 +1,15 @@
+#photo-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+
+}
+
+#photo-container .column {
+    flex: 25%;
+    max-width: 25%;
+}
+.photo img {
+    width: 100%;
+    border-radius: 8px;
+}

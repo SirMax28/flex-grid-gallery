@@ -1,0 +1,1 @@
+This is a practice project to strengthen knowledge of flex and grid.

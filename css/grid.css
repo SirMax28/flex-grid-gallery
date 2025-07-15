@@ -19,7 +19,7 @@ header{
    grid-area: photos;
 }
 
-@media (max-width: 623px) {
+@media (max-width: 1023px) {
     #container{
         grid-template-areas: 
             "header"
