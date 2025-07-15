@@ -55,7 +55,7 @@ header ul li a:hover::after, header ul li a.active::after {
     transform: scaleX(1);
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
     header h1 {
         text-align: left;
     }
