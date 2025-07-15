@@ -47,6 +47,7 @@
 @media (max-width: 1024px) {
     #sidebar ul li{
         width: auto;
+        margin-bottom: 15px;
     } 
     #sidebar ul{
         flex-flow: row wrap;

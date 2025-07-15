@@ -8,8 +8,41 @@
 #photo-container .column {
     flex: 25%;
     max-width: 25%;
+    padding: 0 4px;
 }
-.photo img {
+
+#photo-container .column .photos {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+#photo-container .column .photo img {
     width: 100%;
+    height: auto;  
     border-radius: 8px;
+}
+
+@media (max-width: 624px) {
+    #photo-container .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 624px) {
+    #photo-container .column {
+        flex: 50%;
+        max-width: 100%;
+    }
+}
+@media (min-width: 760px) {
+    #photo-container .column {
+        flex: 33.33%;
+        max-width: 100%;
+    }
+}
+@media (min-width: 1024px) {
+    #photo-container .column {
+        flex: 25%;
+        max-width: 100%;
+    }
 }
